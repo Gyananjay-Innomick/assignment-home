@@ -3,6 +3,9 @@
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "jsRules": {},
   "rules": {
+    "prettier": true,
+    "max-file-line-count": [true, 200],
+    "jsx-boolean-value": false,
     "jsx-no-lambda": false,
     "ordered-imports": false,
     "arrow-return-shorthand": true,
@@ -83,25 +86,11 @@
       "check-type"
     ],
     "indent": [true, "spaces", 2],
-    "trailing-comma": [
-      true,
-      {
-        "multiline": "always",
-        "singleline": "never"
-      }
-    ],
-    "linebreak-style": [true, "LF"],
-    "typedef": [
-      true,
-      "call-signature",
-      "parameter",
-      "arrow-call-signature",
-      "arrow-parameter",
-      "property-declaration"
-    ],
+    "trailing-comma": [true],
+    "linebreak-style": [true, "CRLF"],
     "no-consecutive-blank-lines": true
   },
-  "rulesDirectory": [],
+  "rulesDirectory": ["tslint-plugin-prettier"],
   "linterOptions": {
     "exclude": [
       "config/**/*.js",

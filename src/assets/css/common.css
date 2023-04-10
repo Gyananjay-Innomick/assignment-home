@@ -1,0 +1,154 @@
+.header-container {
+  display: block;
+  height: 13vh;
+}
+.header-upper {
+  background-color: #065086;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  height: 6vh;
+  align-items: center;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: #065086 2px solid;
+  height: 7vh;
+}
+.header-navlink {
+  color: #065086;
+  font-weight: 600;
+}
+.header-announcemnt {
+  border-right: 2px solid gray;
+  padding: 5px;
+  padding-right: 10px;
+  margin: 8px;
+}
+.header-navbar {
+  z-index: 2;
+}
+.social-media-icon {
+  padding: 5px;
+  cursor: pointer;
+}
+.icon-color {
+  color: rgba(196, 196, 65, 0.878);
+}
+.body-heading-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  padding: 10px;
+  padding-bottom: 3%;
+}
+
+.heading-highlight {
+  display: block;
+  height: 6px;
+  width: 40px;
+  margin-bottom: 7px;
+  border-radius: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 50px; */
+  background-color: #ffffff;
+  color: #065086;
+  border-bottom: #065086 2px solid;
+}
+.logo {
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 65%;
+  margin-bottom: 0;
+}
+.nav-items {
+  text-decoration: none;
+  color: #065086;
+  font-weight: 600;
+  padding: 10px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.mobile-menu-icon {
+  display: none;
+}
+
+.nav-dropdown-item {
+  padding-top: 0.6rem;
+  text-align: center;
+  color: #065086;
+  font-weight: 600;
+  width: 100%;
+}
+
+@media screen and (max-width: 820px) {
+  .header-logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #ffffff;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .nav-items {
+    color: #065086;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: #065086;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+  }
+  .navbar {
+    border-bottom: 0;
+  }
+  .nav-dropdown {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mobile-menu-icon {
+    top: 7px;
+  }
+}
